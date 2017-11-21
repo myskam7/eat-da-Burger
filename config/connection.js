@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 var connection;
 
-if(process.env.JAWSDB_WHITE_URL) {
+if(process.env.JAWSDB_ROSE_URL) {
   //Heroku deployment
-    connection = mysql.createConnection(process.env.JAWSDB_WHITE_URL);
+    connection = mysql.createConnection(process.env.JAWSDB_ROSE_URL);
 } else {
   connection = mysql.createConnection({
     root: 3306,
